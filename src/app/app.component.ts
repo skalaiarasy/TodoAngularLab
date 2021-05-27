@@ -33,5 +33,16 @@ export class AppComponent {
   completeTask(form:NgForm):void{
     this.todo[form.form.value.completed].completed = true;
   }
+  //wishMessage()
+  // removeTask(form:NgForm):void{
+  //   let result:
+  // }
+  removeTask(i:any)
+  {
+    this.todo.splice(i,1);
+  }
+
+
+
 
 }
