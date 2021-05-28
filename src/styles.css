@@ -3,26 +3,19 @@
 body {
     background-color: #fefbd8;
   }
-  /* div {
-    background-color: #d5f4e6;
-  } */
+  
   h1{
       color: blue;
   }
-  /* form{
-      background-color:gold;
-  } */
+  
   button{
      
-      background-color:lightcoral;
+       background-color:lightcoral;
   }
-  input{
-    background-color:lightcoral;
-    height: auto;
-    width:  auto;
-  }
+  
+ 
   body {
-    width: 300px;
+    width: 75%;
     border: 10px solid pink;
     padding: 25px;
     margin: 10px;
