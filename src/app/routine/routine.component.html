@@ -1,27 +1,17 @@
 <h1>Todo List</h1>
 
 <div *ngFor="let work of todo;index as i">
-  <!-- <p>{{i}}</p> -->
-  <form #taskForm="ngForm" (ngSubmit)="completeTask(taskForm)">
-    <h3>{{i+1}}.<button *ngIf="!work.completed">Complete</button>{{work.task}}
-      <button (click)="removeTask(i)">X</button>
-    </h3>
-    <input hidden readonly name="completed" ngModel="{{i}}" />
 
-  </form>
+    <form #taskForm="ngForm" (ngSubmit)="completeTask(taskForm)">
+        <h3>{{i+1}}.<button *ngIf="!work.completed">Complete</button>{{work.task}}
+            <button (click)="removeTask(i)">X</button>
+        </h3>
+        <input hidden readonly name="completed" ngModel="{{i}}" />
+    </form>
 
 </div>
-<!-- <form #messageForm="ngForm" (ngSubmit)="wishMessage(messageForm)">
-  <div *ngFor="let finish of todo; index as i" >
-    <button *ngIf="finish.completed" > Congratulatons!</button>
-        
-    
-  </div>
-</form> -->
-
-
 <form #addForm="ngForm" (ngSubmit)="addTask(addForm)">
-  <input type="text" name="task" id="task"  ngModel  />  
-  
-  <button style="width: 100%;">Click here to Add more todo!</button>
+    <input type="text" name="task" id="task" ngModel />
+
+    <button style="width: 100%;">Click here to Add more todo!</button>
 </form>
